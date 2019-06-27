@@ -3,7 +3,7 @@
 <head>
     Curso JavaScrpit Completo
     <meta charset="ult-8">
-    <script>
+    <script>/*
 
         var nome = "Filipi";
         alert(nome);
@@ -24,7 +24,8 @@
         var teste;// Da undefined
         var teste2 = null;//Diz que o próprio programador definiu ela;
 
-        //alert(teste);
+        debugger;
+        //alert(teste); 
         //alert(teste2);
 
         n = 100;
@@ -34,7 +35,40 @@
         alert(str + n); // Neste caso, vai dar olá100, pois o 
         //sinal de + concatena o str com o n.(Primeiro ele tenta somar, depois ele concatena).
 
-         
+        */
+        //Função literal
+        var y = 10;
+        var z = 100;
+
+        a = x (y, z);
+
+        function x (n1,n2){// Corpo da função.
+            
+            return n1 + n2;
+        }
+        
+        alert ("Resultado: " + a);
+
+        x.filipi = ' Teste de cidadão de primeira classe';  
+
+         alert (x.filipi);
+
+         var teste = function(str){//Fanção anônima.
+             
+             alert('Tesde da função anônina');
+         };//precisa colocar o ;, neste ca. 
+         teste('ola');
+
+
+
+         var teste2 = function(f){//Função passada por parâmetro.
+             f()
+             
+         };
+
+         teste2(function(){
+             alert("Função passada por parâmentro, deu CERTO!!!")
+         })
 
     </script>
 </head>
