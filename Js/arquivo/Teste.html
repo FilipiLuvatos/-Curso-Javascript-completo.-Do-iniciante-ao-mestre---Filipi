@@ -46,7 +46,7 @@
             
             return n1 + n2;
         }
-        
+
         alert ("Resultado: " + a);
 
         x.filipi = ' Teste de cidadão de primeira classe';  
@@ -69,6 +69,28 @@
          teste2(function(){
              alert("Função passada por parâmentro, deu CERTO!!!")
          })
+
+
+         var f = 0;
+
+         alert ("Antes f:" + f);
+
+         function mostraz(){
+             var f = 100;//Neste caso 'var' eu estou criando uma variavél x que vale 100
+             // dentro do escopo da função, ou seja, após o termino da função, a mesmo, 
+             // acabda, por isso que ao dar um alert dentro e fora da função os resultados 
+             // são diferentes.
+
+
+             // Mas se eu apagar a palavra 'var' e deixar apenas 'x=100', neste caso, eu estou 
+             // alterando o valor de x de fora do escopo.
+             alert("Depois f: " + f );
+         }
+
+         
+         mostraz();
+
+         alert("Variavél f, fora do escopo da função:" + f);
 
     </script>
 </head>
